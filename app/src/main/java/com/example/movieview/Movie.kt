@@ -9,11 +9,11 @@ class Movie {
 
     annotation class SerializedName(val value: String)
 
-    @JvmField
+
     @SerializedName("title")
     var title: String? = null
 
-    @JvmField
+
     @SerializedName("overview")
     var description: String? = null
 }

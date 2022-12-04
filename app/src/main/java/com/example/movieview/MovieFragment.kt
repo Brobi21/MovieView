@@ -1,6 +1,7 @@
 package com.example.movieview
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -47,10 +48,13 @@ class MovieFragment : Fragment(), OnListFragmentInteractionListener {
                    override fun onFailure(
                        statusCode: Int,
                        headers: Headers?,
-                       response: String?,
-                       throwable: Throwable?
+                       errorResponse: String,
+                       t: Throwable?
                    ) {
-                       TODO("Not yet implemented")
+                       progressBar.hide()
+                       t?.message?.let {
+                           Log.e("MovieFragment", errorResponse)
+                       }
                    }
 
                    override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
