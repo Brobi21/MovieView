@@ -20,5 +20,5 @@ Our app basically is designed to have data persistence. The app will make API ca
 - SQLite- local database along with ‘Room Library’ to store and load cached data
 
 
-## who did what?
+## Roles
 We did research on the different features to implement and how to implement them will affect our app. api into gradle script at lower level. We review the units that were taught in class as well.
