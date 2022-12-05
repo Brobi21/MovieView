@@ -35,7 +35,7 @@ class MovieRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
         val movie = movies[position]
-        val fullMovieImageUrl = "https://image.tmdb.org/t/p/w500/" + movie.movieImageUrl
+        val fullMovieImageUrl = "https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" + movie.movieImageUrl
         holder.mItem = movie
         holder.mMovieTitle.text = movie.title
         holder.mMovieDescription.text = movie.description
